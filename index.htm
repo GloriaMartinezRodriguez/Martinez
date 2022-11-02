@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/logos/logocircle.png" type="image/x-icon">
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+    <!-- <link rel="stylesheet" href="/CSS/normalice.css"> -->
     <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
     <script defer src="JS/barraProgreso.js"></script>
     <script defer src="JS/menu.js"></script>
     <script defer src="JS/preguntas.js"></script>
@@ -89,7 +92,8 @@
             </article>
             <article class="about_icons">
                 <img src="/logos/ss1.ico" class="about_icon">
-                <h3 class="about_title">Sistema Solar</h3>
+              
+                <a data-modal-id="myModal"><h3 class="about_title">Sistema Solar</h3></a>
                 <p class="about_p">Aquí encontraras un sistema solar con un poco de información. Se realizó para practicar los slider de una página.</p>
             </article>
         </div>
@@ -175,7 +179,15 @@
         <h3 class="footer_copyright">Developed and designed by Gloria Martínez ©2022 all rights reserved</h3>
     </section>
 </footer>
+<div id="myModal" class="eins-modal">
+    <div class="eins-modal-content">
+      <div class="eins-modal-close"></div>
+  
+      Mi primer trabajo
+      
+      <button class="eins-modal-close-button">OK</button>
+    </div>
     
-
+<script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 </body>
 </html>
